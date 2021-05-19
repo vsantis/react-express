@@ -1,5 +1,5 @@
-import QueryReturn from '../objects/QueryReturn';
+import QueryResponse from '../objects/QueryResponse';
 
 export default interface QueryRepository {
-  executeQuery: () => Promise<QueryReturn>;
+  executeQuery: (query: string) => Promise<QueryResponse>;
 }

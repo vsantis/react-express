@@ -11,10 +11,10 @@ export default interface ItemReturn {
       amount: number;
       decimals: number;
     };
+    picture: string;
+    condition: string;
+    free_shipping: boolean;
+    sold_quantity: number;
+    description: string;
   };
-  picture: string;
-  condition: string;
-  free_shipping: boolean;
-  sold_quantity: number;
-  description: string;
 }
