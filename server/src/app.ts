@@ -21,7 +21,7 @@ app.get('/ping', (req: Request, res: Response) => {
   res.send('pong');
 });
 
-app.get('/api/token', generateAccessToken);
+app.post('/api/token', generateAccessToken);
 app.get('/api/items', executeQueryApplication);
 app.get('/api/items/:id', getItemApplication);
 

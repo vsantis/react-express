@@ -1,0 +1,41 @@
+@import '../../theme/colors';
+
+.container {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.input {
+  max-height: 2.5rem;
+  flex-grow: 1;
+  padding: 0.44rem 1rem 0.56rem 1rem;
+  font-size: 1rem;
+  line-height: normal;
+  border: none;
+  // box-shadow: 0 1px 2px 0 rgb(0, 0, 0/20%);
+  border-radius: 2px 0 0 2px;
+  &:focus {
+    border: none;
+  }
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.button {
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  background-color: $medium-gray;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  color: $dark-gray;
+}
+
+.iconButton {
+  height: 65%;
+  width: auto;
+}

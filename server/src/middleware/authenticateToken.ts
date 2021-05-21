@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import { tokenSecret } from '../config';
 
 const allowedUrl = '/api/token';
-const allowedMethod = 'get';
+const allowedMethod = 'post';
 
 const authenticateToken = async (
   req: Request,
