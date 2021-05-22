@@ -1,11 +1,17 @@
 @import '../../theme/breakpoints';
 
-.container {
+.container{
+  width: 100%;
+}
+
+.wrapper {
+  height: 12.5rem;
+  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1.25rem 3.125rem 1.25rem 0;
+  padding: 1.25rem 3.125rem 1.25rem 1.25rem;
   margin-bottom: 1px;
   @media screen and (min-width: 0) and (max-width: $mobile-l) {
     flex-direction: column;
@@ -18,6 +24,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex-grow: 1;
   @media screen and (min-width: 0) and (max-width: $mobile-l) {
     height: 6rem;
     padding: 1rem;
@@ -27,36 +34,8 @@
 }
 
 .price {
+  margin-left: 1rem;
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 0.625rem;
-}
-
-.title {
-  font-size: 1rem;
-  font-weight: 300;
-  cursor: pointer;
-  text-decoration: none;
-  color: #333;
-  @media screen and (min-width: 0) and (max-width: $mobile-l) {
-    font-size: 1.25rem;
-    font-weight: 400;
-  }
-}
-
-.imageContainer {
-  height: 10rem;
-  width: 10rem;
-  display: flex;
-  justify-content: center;
-  margin: 0 1.5rem;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.image {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  border-radius: 2px;
 }
